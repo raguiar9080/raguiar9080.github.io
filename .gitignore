@@ -1,0 +1,14 @@
+*.log
+log
+target
+*.deb
+.byebug_history
+npm-debug.log
+webpack-stats.json
+.idea
+*.iml
+*.DS_Store
+.bloop
+.metals
+project/project/
+**/.bsp
