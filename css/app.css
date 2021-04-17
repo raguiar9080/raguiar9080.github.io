@@ -1,3 +1,6 @@
+/* Add hack font */
+pre, code { font-family: Hack, monospace; }
+
 /*
  * HackerThemes.com
  * Author: Alexander Rechsteiner

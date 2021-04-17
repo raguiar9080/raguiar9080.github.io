@@ -75,7 +75,7 @@ $( document ).ready(function() {
   image.onload = () => {
     return kaleidoscope[0].draw();
   };
-  image.src = "../images/fractals/fractal.jpg";
+  image.src = "./static/fractal.jpg";
 
   kaleidoscope =  [], onChange = [], options = [], tr = [], tx = [], ty = [], update = [];
 
