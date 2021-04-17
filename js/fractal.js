@@ -43,7 +43,7 @@ $( document ).ready(function() {
     draw() {
       var cx, i, index, ref, results, scale, step;
       this.domElement.width = this.domElement.height = this.radius * 2;
-      this.context.fillStyle = this.context.createPattern(image, 'repeat'); 
+      this.context.fillStyle = this.context.createPattern(image, 'repeat');
       scale = this.zoom * (this.radius / Math.min(this.image.width, this.image.height));
       step = this.TWO_PI / this.slices;
       cx = this.image.width / 2;
@@ -104,7 +104,7 @@ $( document ).ready(function() {
     // Init
     options[i] = {
       interactive: true,
-      ease: 0.02
+      ease: 0.005
     };
   }
 
