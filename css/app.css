@@ -1774,26 +1774,7 @@ font-style: italic; }
 
 
 .icon {
-    height: 64px;
-    width: 64px;
+    max-width: 100%;
+    max-height: 48px;
     display: block;
-}
-
-.cv {
-    background: url('../static/icons/cv.png');
-}
-.youtube {
-    background: url('../static/icons/youtube.png');
-}
-.github {
-    background: url('../static/icons/github.png');
-}
-.patreon {
-    background: url('../static/icons/patreon.png');
-}
-.soundcloud {
-    background: url('../static/icons/soundcloud.png');
-}
-.linkedin {
-    background: url('../static/icons/linkedin.png');
 }
