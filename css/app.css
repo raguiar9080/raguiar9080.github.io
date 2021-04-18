@@ -1287,7 +1287,7 @@ color: #fff; }
 padding-right: 19px; }
 
 .ht-tm-header {
-padding: 5px 0; }
+padding: 25px 0; }
 
 .ht-tm-sidenav-wrapper {
 position: relative; }
@@ -1698,7 +1698,7 @@ background: #c3dbe6; }
 body.ht-tm-neon-glow .ht-tm-needs-darkness.ht-tm-darkness .ht-tm-cat-subtitle {
 color: #0C0D16; }
 body.ht-tm-neon-glow .ht-navbar-wrapper {
-background: #0C0D16; }
+background: #FF832B; }
 
 .text-underline {
 text-decoration: underline; }
@@ -1772,3 +1772,28 @@ color: #4c81c9; }
 .hljs-emphasis {
 font-style: italic; }
 
+
+.icon {
+    height: 64px;
+    width: 64px;
+    display: block;
+}
+
+.cv {
+    background: url('../static/cv.png');
+}
+.youtube {
+    background: url('../static/youtube.png');
+}
+.github {
+    background: url('../static/github.png');
+}
+.patreon {
+    background: url('../static/patreon.png');
+}
+.soundcloud {
+    background: url('../static/soundcloud.png');
+}
+.linkedin {
+    background: url('../static/linkedin.png');
+}
