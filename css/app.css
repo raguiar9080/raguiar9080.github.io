@@ -1780,20 +1780,20 @@ font-style: italic; }
 }
 
 .cv {
-    background: url('../static/cv.png');
+    background: url('../static/icons/cv.png');
 }
 .youtube {
-    background: url('../static/youtube.png');
+    background: url('../static/icons/youtube.png');
 }
 .github {
-    background: url('../static/github.png');
+    background: url('../static/icons/github.png');
 }
 .patreon {
-    background: url('../static/patreon.png');
+    background: url('../static/icons/patreon.png');
 }
 .soundcloud {
-    background: url('../static/soundcloud.png');
+    background: url('../static/icons/soundcloud.png');
 }
 .linkedin {
-    background: url('../static/linkedin.png');
+    background: url('../static/icons/linkedin.png');
 }
