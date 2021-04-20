@@ -671,7 +671,7 @@ border-radius: 3px; }
 
 .ht-body {
   display: flex;
-  min-height: 100vh;
+  min-height: 98vh;
   overflow-x: hidden;
 flex-direction: column; }
 
