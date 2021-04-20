@@ -1782,3 +1782,7 @@ font-style: italic; }
 .ht-footer-left {
   order: 0;
 }
+
+.ht-footer-logo {
+  margin-bottom: 0px;
+}
