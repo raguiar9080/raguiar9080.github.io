@@ -1,16 +1,8 @@
-/* Add hack font */
-pre, code { font-family: Hack, monospace; }
-
 /*
  * HackerThemes.com
  * Author: Alexander Rechsteiner
  * Author URI: https://hackerthemes.com
  *  */
-
-#messages {
-  max-height: 300px;
-  overflow: auto
-}
 
 .ht-header {
   background: #1A1B26;
