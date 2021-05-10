@@ -1,4 +1,4 @@
-$( document ).ready(function() {
+$(document).ready(function() {
   // Kaleidoscope
   var i, image, kaleidoscope, len, onChange, options, ref, tr, tx, ty, update, randomData;
 
@@ -75,14 +75,15 @@ $( document ).ready(function() {
   image.onload = () => {
     return kaleidoscope[0].draw();
   };
-  image.src = "./static/fractal.jpg";
+  image.src = "./static/fractal_min.jpg";
 
   kaleidoscope =  [], onChange = [], options = [], tr = [], tx = [], ty = [], update = [];
+  update_scalar = 3;
 
   for (i = 0; i < nFractals; i++) {
     kaleidoscope[i] = new Kaleidoscope({
       image: image,
-      slices: 20
+      slices: 10
     });
 
     //kaleidoscope.domElement.style.position = 'absolute';
@@ -96,7 +97,7 @@ $( document ).ready(function() {
 
     document.getElementsByClassName('fractal-logo')[i].appendChild(kaleidoscope[i].domElement);
 
-    // Mouse events
+    // Update events
     tx[i] = kaleidoscope[i].offsetX;
     ty[i] = kaleidoscope[i].offsetY;
     tr[i] = kaleidoscope[i].offsetRotation;
@@ -104,7 +105,7 @@ $( document ).ready(function() {
     // Init
     options[i] = {
       interactive: true,
-      ease: 0.005
+      ease: 0.005 * update_scalar
     };
   }
 
@@ -120,20 +121,20 @@ $( document ).ready(function() {
         kaleidoscope[i].draw();
       }
     }
-    return setTimeout(update, 1000 / 60);
+    return setTimeout(update, (1000 / 60) * update_scalar);
   })();
   (randomData = () => {
     var dx, dy, hx, hy;
-    dx = Math.random();
-    dy = Math.random();
-    hx = dx - 0.5;
-    hy = dy - 0.5;
+    dx = Math.random() * update_scalar;
+    dy = Math.random() * update_scalar;
+    hx = (dx - 0.5) * update_scalar;
+    hy = (dy - 0.5) * update_scalar;
     for (var i = 0; i < nFractals; i++) {
       tx[i] = hx * kaleidoscope[i].radius * -2;
       ty[i] = hy * kaleidoscope[i].radius * 2;
       tr[i] = Math.atan2(hy, hx);
-      kaleidoscope[i].draw();
+      //kaleidoscope[i].draw();
     }
-    return setTimeout(randomData, 1000 / 4);
+    return setTimeout(randomData, 1000 / 2);
   })();
 });
